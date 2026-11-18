@@ -1,0 +1,240 @@
+/* Estilos específicos de esta página */
+
+/* Contacto */
+.distribucion-contacto {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 65px;
+   padding-top: 42px;
+   padding-bottom: 105px;
+}
+.contenido-contacto h2 {
+   font-size: 3rem;
+}
+.contenido-contacto > p:not(.antetitulo) {
+   max-width: 450px;
+   line-height: 1.8;
+}
+.boton-correo {
+   display: flex;
+   align-items: center;
+   gap: 14px;
+   max-width: 470px;
+   padding: 16px;
+   margin-top: 27px;
+   border: 1px solid #d6e1cf;
+   border-radius: 12px;
+   background: white;
+}
+.icono-correo {
+   display: grid;
+   place-items: center;
+   width: 42px;
+   height: 42px;
+   border-radius: 10px;
+   background: var(--verde);
+}
+.boton-correo small,
+.boton-correo strong {
+   display: block;
+}
+.boton-correo small {
+   font-size: 0.62rem;
+   color: #7d8b7b;
+   font-weight: 800;
+   letter-spacing: 0.1em;
+}
+.boton-correo strong {
+   font-size: 0.92rem;
+   margin-top: 3px;
+}
+.boton-correo > b {
+   margin-left: auto;
+   color: #66863a;
+}
+.nota-sustitucion {
+   font-size: 0.72rem;
+   margin-top: 10px;
+}
+.panel-social {
+   padding: 28px;
+   border: 1px solid var(--borde);
+   border-radius: var(--radio-borde);
+   background: white;
+}
+.panel-social h3 {
+   font-size: 1.7rem;
+   margin-bottom: 22px;
+}
+.fila-social {
+   display: flex;
+   align-items: center;
+   gap: 13px;
+   padding: 15px 0;
+   border-top: 1px solid #edf0e9;
+}
+.logo-social {
+   display: grid;
+   place-items: center;
+   width: 42px;
+   height: 42px;
+   flex-shrink: 0;
+   border-radius: 11px;
+   background: #eaf0e3;
+   color: #365b37;
+   font-weight: 800;
+}
+.logo-linkedin {
+   font-size: 1.1rem;
+}
+.logo-instagram svg {
+   width: 22px;
+   height: 22px;
+   fill: none;
+   stroke: currentColor;
+   stroke-width: 2;
+}
+.fila-social > span:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+}
+.fila-social strong {
+   font-size: 0.9rem;
+}
+.fila-social small {
+   color: #7d8b7d;
+   font-size: 0.72rem;
+}
+.fila-social > b {
+   margin-left: auto;
+   color: #6c8c3c;
+}
+.fila-social:hover strong {
+   color: #5c7d31;
+}
+.caja-disponibilidad {
+   display: flex;
+   gap: 12px;
+   align-items: center;
+   padding: 15px;
+   margin-top: 18px;
+   background: #eef4e7;
+   border-radius: 10px;
+}
+.caja-disponibilidad > i {
+   width: 9px;
+   height: 9px;
+   flex-shrink: 0;
+   border-radius: 50%;
+   background: #7da742;
+   box-shadow: 0 0 0 4px #7da74224;
+}
+.caja-disponibilidad strong,
+.caja-disponibilidad small {
+   display: block;
+}
+.caja-disponibilidad strong {
+   font-size: 0.77rem;
+}
+.caja-disponibilidad small {
+   color: #788673;
+   font-size: 0.7rem;
+   margin-top: 3px;
+}
+
+@media  (max-width: 680px)  {
+  .rejilla-areas,
+   .rejilla-habilidades,
+   .distribucion-destacado,
+   .distribucion-sobre-mi,
+   .distribucion-contacto { grid-template-columns: 1fr; }
+  .distribucion-contacto { padding-top: 25px;
+      gap: 30px;
+      padding-bottom: 70px; }
+  .contenido-contacto h2 { font-size: 2.5rem; }
+  .panel-social { padding: 22px; }
+  .boton-correo { gap: 10px;
+      padding: 12px; }
+  .boton-correo strong { font-size: 0.78rem; }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 680px) {
+   .contenido-contacto h2 {
+      font-size: clamp(2rem, 9vw, 2.5rem);
+   }
+
+   .boton-correo,
+   .panel-social,
+   .caja-disponibilidad {
+      min-width: 0;
+      max-width: 100%;
+   }
+
+   .boton-correo strong {
+      overflow-wrap: anywhere;
+   }
+
+   .fila-social {
+      gap: 9px;
+   }
+}
+
+
+/* Datos de contacto por teléfono y WhatsApp */
+.contacto-telefono {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px solid var(--color-borde, #dddddd);
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.icono-telefono {
+    font-size: 25px;
+}
+
+.datos-telefono {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 180px;
+}
+
+.datos-telefono small {
+    font-size: 12px;
+}
+
+.datos-telefono strong {
+    font-size: 20px;
+}
+
+.boton-whatsapp {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #25a85a;
+    color: white;
+}
+
+.boton-whatsapp:hover {
+    background-color: #1d8849;
+}
+
+@media (max-width: 600px) {
+    .contacto-telefono {
+        align-items: flex-start;
+    }
+
+    .boton-whatsapp {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

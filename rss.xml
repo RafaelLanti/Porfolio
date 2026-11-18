@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Portfolio de Rafael Lanti Garrocho</title>
+    <link>index.html</link>
+    <description>Portfolio sobre mi formación, habilidades y proyectos en informática, sistemas y redes.</description>
+    <language>es-es</language>
+    <category>Informática / Sistemas / Redes / Desarrollo web</category>
+    <copyright>Rafael Lanti Garrocho</copyright>
+    <item>
+      <title>Sobre mí</title>
+      <description>Conoce mi formación en Administración de Sistemas Informáticos en Red (ASIR), mis intereses y mi experiencia práctica.</description>
+      <link>sobre-mi.html</link>
+      <category>Formación</category>
+    </item>
+    <item>
+      <title>Habilidades informáticas</title>
+      <description>Resumen de mis conocimientos e intereses en redes, desarrollo web, equipos y sistemas.</description>
+      <link>habilidades.html</link>
+      <category>Habilidades</category>
+    </item>
+    <item>
+      <title>Proyectos</title>
+      <description>Una selección de experiencias y trabajos relacionados con comunicación digital y creación de páginas web.</description>
+      <link>proyectos.html</link>
+      <category>Proyectos</category>
+    </item>
+  </channel>
+</rss>

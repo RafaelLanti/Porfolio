@@ -1,0 +1,140 @@
+/* Estilos específicos de esta página */
+
+/* Sobre mí */
+.distribucion-sobre-mi {
+   display: grid;
+   grid-template-columns: 0.75fr 1.25fr;
+   gap: 75px;
+   padding-top: 45px;
+}
+.retrato-provisional {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   min-height: 300px;
+   overflow: hidden;
+   border-radius: 45% 45% 16px 16px;
+   background: #e6eddd;
+}
+.retrato-provisional > span {
+   z-index: 1;
+   font:
+      800 6rem "Manrope",
+      sans-serif;
+   color: #698746;
+   letter-spacing: -0.12em;
+}
+.retrato-provisional small {
+   z-index: 1;
+   font-size: 0.62rem;
+   font-weight: 800;
+   letter-spacing: 0.13em;
+   color: #74856d;
+}
+.retrato-provisional > i {
+   position: absolute;
+   width: 240px;
+   height: 240px;
+   border: 1px solid #c8d8bc;
+   border-radius: 50%;
+   box-shadow:
+      0 0 0 28px #ffffff40,
+      0 0 0 56px #ffffff2e;
+}
+.nota-lateral {
+   display: flex;
+   gap: 13px;
+   padding: 21px 5px;
+}
+.nota-lateral > b {
+   width: 10px;
+   height: 10px;
+   background: #8eb648;
+   flex-shrink: 0;
+   margin-top: 7px;
+}
+.nota-lateral p {
+   font:
+      700 1rem "Manrope",
+      sans-serif;
+   color: #475c4b;
+   line-height: 1.6;
+   margin: 0;
+}
+.texto-sobre-mi h2 {
+   font-size: 2.35rem;
+}
+.texto-sobre-mi > p:not(.antetitulo) {
+   font-size: 0.97rem;
+   line-height: 1.9;
+   margin-bottom: 17px;
+}
+.seccion-suave {
+   background: #edf0e8;
+   border-block: 1px solid var(--borde);
+}
+.lista-formacion {
+   border-top: 1px solid #d6ded2;
+}
+.lista-formacion article {
+   display: grid;
+   grid-template-columns: 145px 1fr 25px;
+   align-items: start;
+   gap: 20px;
+   padding: 25px 5px;
+   border-bottom: 1px solid #d6ded2;
+}
+.lista-formacion article > small {
+   color: #6c843f;
+   font-size: 0.65rem;
+   font-weight: 800;
+   letter-spacing: 0.1em;
+   padding-top: 5px;
+}
+.lista-formacion h3 {
+   font-size: 1.1rem;
+   margin-bottom: 7px;
+}
+.lista-formacion p {
+   font-size: 0.86rem;
+   margin: 0;
+}
+.lista-formacion article > b {
+   color: #7b9c43;
+}
+
+@media  (max-width: 960px)  {
+  .distribucion-sobre-mi { gap: 40px; }
+}
+
+@media  (max-width: 680px)  {
+  .distribucion-sobre-mi { padding-top: 25px; }
+  .retrato-provisional { min-height: 240px; }
+  .lista-formacion article { grid-template-columns: 1fr 22px;
+      gap: 8px; }
+  .lista-formacion article > small { grid-column: 1/-1; }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 680px) {
+   .distribucion-sobre-mi {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 25px;
+   }
+
+   .retrato-provisional {
+      width: 100%;
+      max-width: 360px;
+      margin-inline: auto;
+   }
+
+   .texto-sobre-mi h2 {
+      font-size: clamp(1.9rem, 8vw, 2.35rem);
+   }
+
+   .lista-formacion article {
+      grid-template-columns: minmax(0, 1fr) 22px;
+   }
+}

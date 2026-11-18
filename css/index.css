@@ -1,0 +1,677 @@
+/* Estilos específicos de esta página */
+
+/* Inicio */
+.portada {
+   display: grid;
+   grid-template-columns: 1.03fr 0.97fr;
+   gap: 45px;
+   align-items: center;
+   padding-block: 76px 80px;
+   min-height: 610px;
+}
+.portada h1 span {
+   color: #66863a;
+}
+.introduccion-portada {
+   max-width: 570px;
+   font-size: 1.08rem;
+   line-height: 1.85;
+}
+.botones-portada {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 24px;
+   margin: 31px 0 32px;
+}
+.boton {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   padding: 14px 19px;
+   border-radius: 8px;
+   font-size: 0.9rem;
+   font-weight: 700;
+   transition:
+      transform 0.2s,
+      background 0.2s;
+}
+.boton:hover {
+   transform: translateY(-2px);
+}
+.boton-oscuro {
+   background: var(--texto-principal);
+   color: white;
+}
+.boton-oscuro:hover {
+   background: #35504a;
+}
+.enlace-texto {
+   font-size: 0.9rem;
+   font-weight: 700;
+}
+.enlace-texto:hover {
+   color: #5e7e34;
+}
+.prueba-portada {
+   display: flex;
+   gap: 13px;
+   align-items: center;
+   border-top: 1px solid var(--borde);
+   padding-top: 20px;
+   max-width: 470px;
+}
+.icono-prueba {
+   display: grid;
+   place-items: center;
+   width: 37px;
+   height: 37px;
+   flex-shrink: 0;
+   border-radius: 50%;
+   background: var(--verde-claro);
+   color: #4e7030;
+   font-weight: 700;
+}
+.prueba-portada p {
+   font-size: 0.8rem;
+   line-height: 1.5;
+   margin: 0;
+}
+.prueba-portada strong {
+   color: var(--texto-principal);
+   font-size: 0.86rem;
+}
+.visual-portada {
+   position: relative;
+   min-height: 440px;
+   display: grid;
+   place-items: center;
+   background: #e9eee3;
+   border-radius: 46% 46% 18px 18px;
+   overflow: hidden;
+}
+.etiqueta-visual {
+   position: absolute;
+   z-index: 3;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-size: 0.62rem;
+   font-weight: 800;
+   letter-spacing: 0.12em;
+   color: #66766b;
+}
+.etiqueta-superior {
+   top: 25px;
+   left: 28px;
+}
+.etiqueta-inferior {
+   bottom: 23px;
+   left: 28px;
+}
+.etiqueta-visual i {
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   background: #7fa640;
+   box-shadow: 0 0 0 4px #d8e5ca;
+}
+.ilustracion-red {
+   width: 100%;
+   height: 370px;
+   position: relative;
+}
+.anillo-red {
+   position: absolute;
+   border: 1px solid rgba(62, 91, 68, 0.17);
+   border-radius: 50%;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+.anillo-a {
+   width: 285px;
+   height: 285px;
+}
+.anillo-b {
+   width: 205px;
+   height: 205px;
+   border-style: dashed;
+}
+.centro-red {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   background: var(--texto-principal);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   color: var(--verde);
+   box-shadow: 0 12px 30px #182a2b2b;
+}
+.centro-red b {
+   font:
+      800 1.55rem "Manrope",
+      sans-serif;
+   letter-spacing: -0.08em;
+}
+.centro-red small {
+   color: #e0e9dc;
+   font-size: 0.5rem;
+   letter-spacing: 0.12em;
+}
+.nodo {
+   position: absolute;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 104px;
+   height: 98px;
+   border-radius: 14px;
+   border: 1px solid #2c463326;
+   background: #fffffff0;
+   box-shadow: 0 12px 24px #2a3e2a12;
+}
+.nodo > b {
+   font-size: 0.68rem;
+   letter-spacing: 0.06em;
+   margin-top: 4px;
+}
+.nodo small {
+   color: #819087;
+   font-size: 0.62rem;
+}
+.nodo > span {
+   color: #577b37;
+   font-size: 1.55rem;
+   line-height: 1.2;
+   font-weight: 700;
+}
+.nodo-router {
+   top: 50px;
+   left: calc(50% - 52px);
+}
+.nodo-wifi {
+   top: 143px;
+   right: 7%;
+}
+.nodo-ordenador {
+   bottom: 28px;
+   left: calc(50% - 52px);
+}
+.nodo-codigo {
+   top: 143px;
+   left: 7%;
+}
+.conexion {
+   position: absolute;
+   z-index: 0;
+   left: 50%;
+   top: 50%;
+   height: 1px;
+   width: 120px;
+   transform-origin: left;
+   background: repeating-linear-gradient(90deg, #8eaa76 0 5px, transparent 5px 10px);
+}
+.conexion-uno {
+   transform: rotate(-90deg);
+   width: 98px;
+}
+.conexion-dos {
+   transform: rotate(0);
+   width: 105px;
+}
+.conexion-tres {
+   transform: rotate(90deg);
+   width: 98px;
+}
+.conexion-cuatro {
+   transform: rotate(180deg);
+   width: 105px;
+}
+/* Datos y tarjetas */
+.franja-estadisticas {
+   background: var(--texto-principal);
+   color: white;
+}
+.rejilla-estadisticas {
+   display: grid;
+   grid-template-columns: 0.8fr 0.8fr 1.4fr;
+   padding-block: 26px;
+}
+.dato-estadistico {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 7px 30px;
+   border-right: 1px solid #ffffff2e;
+}
+.dato-estadistico:first-child {
+   padding-left: 0;
+}
+.dato-estadistico:last-child {
+   border: 0;
+}
+.dato-estadistico strong {
+   font:
+      800 clamp(1.7rem, 3vw, 2.4rem) "Manrope",
+      sans-serif;
+   color: var(--verde);
+   line-height: 1.2;
+}
+.dato-estadistico span {
+   font-size: 0.78rem;
+   color: #d1d9d1;
+   margin-top: 7px;
+   max-width: 260px;
+}
+.seccion {
+   padding-block: 96px;
+}
+.introduccion-seccion {
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   gap: 50px;
+   margin-bottom: 37px;
+}
+.introduccion-seccion h2 {
+   margin-bottom: 0;
+}
+.introduccion-seccion > p {
+   max-width: 390px;
+   margin-bottom: 5px;
+   line-height: 1.8;
+}
+.rejilla-areas {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 17px;
+}
+.tarjeta-area {
+   position: relative;
+   overflow: hidden;
+   min-height: 300px;
+   padding: 26px;
+   border-radius: var(--radio-borde);
+   background: white;
+   border: 1px solid var(--borde);
+}
+.area-redes {
+   background: #edf3e6;
+}
+.area-desarrollo-web {
+   background: #fff;
+}
+.area-sistemas {
+   background: #f0eee6;
+}
+.cabecera-area {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 34px;
+}
+.icono-area {
+   display: grid;
+   place-items: center;
+   width: 46px;
+   height: 46px;
+   border-radius: 12px;
+   background: var(--verde);
+   font-size: 1.15rem;
+   font-weight: 800;
+}
+.cabecera-area small {
+   color: #7c8980;
+   font-size: 0.62rem;
+   font-weight: 800;
+   letter-spacing: 0.1em;
+}
+.tarjeta-area h3 {
+   font-size: 1.4rem;
+   margin-bottom: 12px;
+}
+.tarjeta-area p {
+   font-size: 0.9rem;
+   max-width: 300px;
+   min-height: 65px;
+}
+.tarjeta-area > a {
+   display: inline-flex;
+   gap: 9px;
+   font-size: 0.82rem;
+   font-weight: 800;
+   margin-top: 8px;
+}
+.tarjeta-area > a:hover {
+   color: #66863a;
+}
+.decoracion-tarjeta {
+   position: absolute;
+   pointer-events: none;
+   color: #45623c1f;
+   font:
+      800 2.7rem "Manrope",
+      sans-serif;
+   right: 18px;
+   top: 100px;
+   letter-spacing: 0.12em;
+}
+.decoracion-web {
+   top: 110px;
+   font-size: 1.2rem;
+   line-height: 1.3;
+}
+.decoracion-sistemas {
+   top: 75px;
+   font-size: 6rem;
+}
+.proyecto-destacado {
+   background: #e8eee1;
+   padding-block: 83px;
+   border-block: 1px solid #dce5d6;
+}
+.distribucion-destacado {
+   display: grid;
+   grid-template-columns: 1fr 0.9fr;
+   align-items: center;
+   gap: 80px;
+}
+.distribucion-destacado h2 {
+   font-size: clamp(2.7rem, 5vw, 4.6rem);
+}
+.distribucion-destacado > div:first-child > p:not(.antetitulo) {
+   max-width: 510px;
+   line-height: 1.8;
+}
+.boton-contorno {
+   margin-top: 13px;
+   border: 1px solid #bdcbb5;
+   color: var(--texto-principal);
+   background: #ffffff80;
+}
+.visual-destacado {
+   padding: 27px;
+   border: 1px solid #d6e0d0;
+   background: #ffffffcc;
+   border-radius: var(--radio-borde);
+}
+.cabecera-grafico {
+   display: flex;
+   justify-content: space-between;
+   gap: 12px;
+   align-items: center;
+   color: #66776b;
+   font-size: 0.65rem;
+   font-weight: 800;
+   letter-spacing: 0.08em;
+}
+.cabecera-grafico b {
+   background: var(--verde);
+   color: var(--texto-principal);
+   padding: 6px 9px;
+   border-radius: 5px;
+   font-size: 0.72rem;
+}
+.grafico {
+   height: 215px;
+   display: flex;
+   align-items: end;
+   justify-content: center;
+   gap: 40px;
+   padding: 20px 20px 0;
+   position: relative;
+}
+.barra-grafico {
+   position: relative;
+   width: 26%;
+   min-height: 25px;
+   border-radius: 9px 9px 0 0;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   padding-top: 12px;
+   font:
+      800 0.9rem "Manrope",
+      sans-serif;
+}
+.barra-antes {
+   height: 26%;
+   background: #dce5d6;
+   color: #52654f;
+}
+.barra-despues {
+   height: 100%;
+   background: var(--verde);
+   color: #253923;
+}
+.grafico > i {
+   position: absolute;
+   left: 6%;
+   right: 6%;
+   bottom: 0;
+   height: 1px;
+   background: #cbd6c5;
+}
+.leyenda-grafico {
+   display: flex;
+   justify-content: center;
+   gap: 28px;
+   margin-top: 15px;
+   font-size: 0.75rem;
+   color: var(--texto-secundario);
+}
+.leyenda-grafico span {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+}
+.leyenda-grafico i {
+   display: inline-block;
+   width: 9px;
+   height: 9px;
+   border-radius: 2px;
+   background: #dce5d6;
+}
+.leyenda-grafico span:last-child i {
+   background: #a5d64f;
+}
+.nota-grafico {
+   font-size: 0.68rem;
+   text-align: center;
+   margin: 13px 0 0;
+}
+.llamada-final {
+   text-align: center;
+   padding-block: 90px 100px;
+}
+.llamada-final .antetitulo {
+   justify-content: center;
+}
+.llamada-final h2 {
+   margin-bottom: 18px;
+}
+.llamada-final > p:not(.antetitulo) {
+   max-width: 590px;
+   margin: 0 auto 26px;
+}
+.llamada-final .boton {
+   margin: auto;
+}
+
+/* FOTO DE PERFIL — Inicio
+   Cambia el tamaño desde --tamano-retrato y conserva object-fit: cover
+   para que la fotografía rellene el marco sin deformarse. */
+.retrato-portada {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 18px;
+   min-width: 0;
+}
+.marco-retrato {
+   position: relative;
+   width: min(100%, 390px);
+   aspect-ratio: 4/5;
+   padding: 12px;
+   background: var(--blanco);
+   border: 1px solid var(--borde);
+   border-radius: 24px;
+   box-shadow: 0 24px 60px rgba(24, 42, 43, 0.12);
+   transform: rotate(1.5deg);
+}
+.foto-perfil {
+   display: block;
+   width: 100%;
+   height: 100%;
+   min-height: 360px;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 16px;
+   background: var(--fondo-suave);
+}
+.pie-retrato {
+   position: absolute;
+   left: 24px;
+   right: 24px;
+   bottom: 24px;
+   padding: 12px 14px;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.94);
+   color: var(--texto-principal);
+   font-size: 0.68rem;
+   font-weight: 800;
+   letter-spacing: 0.07em;
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.punto-retrato {
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   margin-right: 8px;
+   border-radius: 50%;
+   background: #83ae3b;
+}
+.nota-retrato {
+   display: flex;
+   flex-direction: column;
+   gap: 3px;
+   text-align: center;
+}
+.nota-retrato strong {
+   font:
+      800 1rem "Manrope",
+      sans-serif;
+}
+.nota-retrato span {
+   color: var(--texto-secundario);
+   font-size: 0.82rem;
+}
+@media (max-width: 760px) {
+   .retrato-portada {
+      margin-top: 8px;
+   }
+   .marco-retrato {
+      width: min(82%, 340px);
+   }
+   .foto-perfil {
+      min-height: 300px;
+   }
+}
+
+@media  (max-width: 960px)  {
+  .portada { grid-template-columns: 1fr;
+      gap: 35px;
+      padding-block: 60px; }
+  .texto-portada { max-width: 760px; }
+  .visual-portada { min-height: 420px; }
+  .distribucion-destacado { gap: 35px; }
+}
+
+@media  (max-width: 680px)  {
+  .portada { padding-block: 48px; }
+  .portada h1,
+   .portada-interior h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
+  .introduccion-portada,
+   .introduccion-interior { font-size: 1rem; }
+  .visual-portada { min-height: 365px; }
+  .ilustracion-red { transform: scale(0.88); }
+  .etiqueta-superior { left: 15px;
+      top: 18px; }
+  .etiqueta-inferior { left: 15px;
+      bottom: 15px;
+      font-size: 0.53rem; }
+  .nodo { width: 91px;
+      height: 87px; }
+  .nodo-router,
+   .nodo-ordenador { left: calc(50% - 45px); }
+  .nodo-router { top: 40px; }
+  .nodo-ordenador { bottom: 18px; }
+  .nodo-wifi { right: 1%;
+      top: 135px; }
+  .nodo-codigo { left: 1%;
+      top: 135px; }
+  .anillo-a { width: 250px;
+      height: 250px; }
+  .anillo-b { width: 180px;
+      height: 180px; }
+  .rejilla-estadisticas { grid-template-columns: 1fr;
+      padding-block: 12px; }
+  .dato-estadistico,
+   .dato-estadistico:first-child { padding: 17px 0;
+      border-right: 0;
+      border-bottom: 1px solid #ffffff26; }
+  .dato-estadistico:last-child { border-bottom: 0; }
+  .tarjeta-area { min-height: 275px; }
+  .visual-destacado { padding: 20px; }
+  .grafico { height: 190px;
+      gap: 25px; }
+  .llamada-final { padding-block: 65px 75px; }
+}
+
+@media  (max-width: 760px)  {
+  .retrato-portada { margin-top: 8px; }
+}
+
+/* Ajustes adicionales para la portada en móviles */
+@media (max-width: 680px) {
+   .portada {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 35px;
+   }
+
+   .texto-portada,
+   .visual-portada,
+   .visual-destacado,
+   .tarjeta-area {
+      min-width: 0;
+      max-width: 100%;
+   }
+
+   .portada-interior h1,
+   .texto-portada h1 {
+      overflow-wrap: anywhere;
+   }
+
+   .botones-portada {
+      flex-wrap: wrap;
+   }
+
+   .rejilla-areas {
+      grid-template-columns: minmax(0, 1fr);
+   }
+
+   .distribucion-destacado {
+      grid-template-columns: minmax(0, 1fr);
+   }
+}

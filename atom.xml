@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es" xml:base="./">
+  <id>./</id>
+  <title>Portfolio de Rafael Lanti Garrocho</title>
+  <updated>2026-11-13T00:00:00Z</updated>
+  <link rel="alternate" href="index.html"/>
+  <link rel="self" href="atom.xml"/>
+  <author>
+    <name>Rafael Lanti Garrocho</name>
+  </author>
+  <category term="Informática y sistemas"/>
+  <entry>
+    <id>sobre-mi.html</id>
+    <title>Sobre mí</title>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <summary>Formación en ASIR, intereses profesionales y experiencia práctica.</summary>
+    <link rel="alternate" href="sobre-mi.html"/>
+  </entry>
+  <entry>
+    <id>habilidades.html</id>
+    <title>Habilidades informáticas</title>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <summary>Conocimientos e intereses en redes informáticas, desarrollo web, equipos y sistemas.</summary>
+    <link rel="alternate" href="habilidades.html"/>
+  </entry>
+  <entry>
+    <id>proyectos.html</id>
+    <title>Proyectos</title>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <summary>Experiencias en comunicación digital y creación de páginas web.</summary>
+    <link rel="alternate" href="proyectos.html"/>
+  </entry>
+</feed>

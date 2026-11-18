@@ -1,0 +1,121 @@
+/* Estilos específicos de esta página */
+
+/* Habilidades */
+.rejilla-habilidades {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 18px;
+}
+.tarjeta-habilidad {
+   padding: 30px;
+   border-radius: var(--radio-borde);
+   border: 1px solid var(--borde);
+   background: white;
+}
+.habilidad-destacada {
+   background: #edf3e6;
+   border-color: #d8e3cf;
+}
+.cabecera-habilidad {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 27px;
+}
+.cabecera-habilidad > span {
+   display: grid;
+   place-items: center;
+   width: 47px;
+   height: 47px;
+   border-radius: 13px;
+   background: var(--verde);
+   color: var(--texto-principal);
+   font-weight: 800;
+   font-size: 1.05rem;
+}
+.cabecera-habilidad > small {
+   font-size: 0.65rem;
+   color: #7b8980;
+   font-weight: 800;
+   letter-spacing: 0.1em;
+}
+.tarjeta-habilidad h2 {
+   font-size: 1.65rem;
+   margin-bottom: 12px;
+}
+.tarjeta-habilidad > p {
+   font-size: 0.9rem;
+   min-height: 73px;
+}
+.tarjeta-habilidad ul {
+   list-style: none;
+   padding: 0;
+   margin: 22px 0 25px;
+}
+.tarjeta-habilidad li {
+   padding: 9px 0 9px 22px;
+   position: relative;
+   border-bottom: 1px solid #73877024;
+   font-size: 0.87rem;
+}
+.tarjeta-habilidad li:before {
+   content: "↗";
+   position: absolute;
+   left: 0;
+   color: #688b37;
+   font-weight: 800;
+}
+.pie-habilidad {
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid #73877033;
+   padding-top: 17px;
+   color: #74836e;
+   font-size: 0.62rem;
+   font-weight: 800;
+   letter-spacing: 0.1em;
+}
+.pie-habilidad b {
+   color: #688b37;
+   font-size: 0.9rem;
+}
+.aviso {
+   padding: 17px 20px;
+   margin-top: 25px;
+   border-left: 3px solid #a6ca66;
+   background: #edf0e8;
+   color: #69766a;
+   font-size: 0.83rem;
+}
+.aviso strong {
+   color: var(--texto-principal);
+}
+
+@media  (max-width: 680px)  {
+  .tarjeta-habilidad { padding: 23px; }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 680px) {
+   .rejilla-habilidades {
+      grid-template-columns: minmax(0, 1fr);
+   }
+
+   .tarjeta-habilidad {
+      min-width: 0;
+      padding: 20px;
+   }
+
+   .tarjeta-habilidad h2 {
+      font-size: 1.45rem;
+   }
+
+   .tarjeta-habilidad > p {
+      min-height: 0;
+   }
+
+   .pie-habilidad {
+      gap: 12px;
+      flex-wrap: wrap;
+   }
+}
